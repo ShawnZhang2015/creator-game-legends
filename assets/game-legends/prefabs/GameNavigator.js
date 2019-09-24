@@ -161,7 +161,9 @@ let GameNavigator = cc.Class({
             fail: () => {
                 if (this.type === Type.SARS_GAME) {
                     SarsGameHelper.instance().showIamge(this.gameInfo);  
-                } 
+                } else if (this.type === Type.WX_CLOUD && this.gameInfo.bg) {
+                    wxconfig.previewImage(this.gameInfo.bg);    
+                }
             }
         })
     }
