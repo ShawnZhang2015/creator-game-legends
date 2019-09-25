@@ -7,7 +7,14 @@
 3. 微笑模式
 
 详细内容请看这里
+
 https://mp.weixin.qq.com/s/wv7uccX-Tf2S13LtOfDuCQ
+
+
+视频演示连接：
+
+https://v.qq.com/x/page/c3000cefbkt.html
+
 
 # 更新说明
 
