@@ -2,7 +2,7 @@
 Creator星球游戏开发社区小游戏组件
 
 # 激励视频广告组件
-![](https://github.com/ShawnZhang2015/creator-game-legends/raw/master/RewardedVideoAd.png)
+![激励视频广告组件](https://github.com/ShawnZhang2015/creator-game-legends/raw/master/RewardedVideoAd.png)
 
 不用写代码，拖到节点上有能用，支持全部平台、浏览器、微信、字节跳动
 体验链接：
