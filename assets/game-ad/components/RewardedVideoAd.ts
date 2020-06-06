@@ -26,6 +26,8 @@ export default class RewardedVideoAd extends cc.Component {
     @property(cc.Prefab)
     simulationVideoPrefab: cc.Prefab = null;
 
+    @property({type: cc.Label})
+    timesLabel: cc.Label = null;
     /**
      * 组件加载
      */
@@ -37,7 +39,7 @@ export default class RewardedVideoAd extends cc.Component {
                 event.target.resumeSystemEvents();    
             }, 1);
         });
-
+        
         if (!this.adUnitId) {
             console.log('视频广告ID不存在，直接通过');
             if (this.playOnLoad) {
@@ -48,8 +50,14 @@ export default class RewardedVideoAd extends cc.Component {
 
         if (cc.sys.WECHAT_GAME === cc.sys.platform) {
             this.init();
-        } else if (this.playOnLoad) {
-            this.simulationPlayVideoAd(10);
+        } else  {
+            if (this.timesLabel && !CC_EDITOR) {
+                this.timesLabel.node.active = false;
+            }
+
+            if(this.playOnLoad) {
+                this.simulationPlayVideoAd(10);
+            }
         }
     }
 
@@ -83,6 +91,10 @@ export default class RewardedVideoAd extends cc.Component {
             console.log('广告加载失败：', error);
             item.rewardedVideoAd.load();
         });
+        
+        if (this.timesLabel) {
+            this.timesLabel.string = `剩余${this.maxCount - item.playCount}次`;
+        }
     }
 
     /**
@@ -111,7 +123,11 @@ export default class RewardedVideoAd extends cc.Component {
             item.rewardedVideoAd.offClose(callback);
             if (res && res.isEnded || res === undefined) {
                 item.playCount++;
-                cc.Component.EventHandler.emitEvents(this.events, res);    
+                cc.Component.EventHandler.emitEvents(this.events, res);
+
+                if (this.timesLabel) {
+                    this.timesLabel.string = `剩余${this.maxCount - item.playCount}次`;
+                }
             }
         }
         item.rewardedVideoAd.onClose(callback);
