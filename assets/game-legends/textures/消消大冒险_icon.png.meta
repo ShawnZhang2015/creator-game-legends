@@ -1,10 +1,14 @@
 {
-  "ver": "2.3.1",
+  "ver": "2.3.5",
   "uuid": "dff8bbba-84d2-4e2a-a200-90717defb701",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 120,
+  "height": 120,
   "platformSettings": {},
   "subMetas": {
     "消消大冒险_icon": {

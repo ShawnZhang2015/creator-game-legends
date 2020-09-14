@@ -1,10 +1,14 @@
 {
-  "ver": "2.3.1",
+  "ver": "2.3.5",
   "uuid": "2e4ab7b8-7f8a-43ca-86b6-56a80f564660",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 295,
+  "height": 150,
   "platformSettings": {},
   "subMetas": {
     "RewardedVideoAd": {

@@ -30,7 +30,11 @@
     "Native Socket",
     "Geom Utils",
     "3D",
-    "3D Primitive"
+    "3D Primitive",
+    "3D Physics/cannon.js",
+    "3D Physics/Builtin",
+    "3D Particle",
+    "SafeArea"
   ],
   "facebook": {
     "appID": "",
@@ -47,7 +51,7 @@
   "group-list": [
     "default"
   ],
-  "last-module-event-record-time": 1591403418549,
+  "last-module-event-record-time": 1600069949168,
   "simulator-orientation": false,
   "simulator-resolution": {
     "height": 640,
@@ -55,5 +59,8 @@
   },
   "start-scene": "current",
   "use-customize-simulator": true,
-  "use-project-simulator-setting": false
+  "use-project-simulator-setting": false,
+  "migrate-history": [
+    "cloud-function"
+  ]
 }
