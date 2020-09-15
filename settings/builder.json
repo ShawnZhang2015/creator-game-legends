@@ -2,6 +2,7 @@
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
     "host": "",
+    "packageName": "org.cocos2d.demo",
     "pathPattern": "",
     "recordPath": "",
     "scheme": "https",
@@ -35,7 +36,7 @@
     "orientation": "portrait",
     "zip": false
   },
-  "startScene": "75eb4d14-e01b-47dc-8ef4-0b7a3a4fff6b",
+  "startScene": "3e3040ba-9614-4893-8152-761df0f2acbd",
   "title": "creator-game-legends",
   "webOrientation": "auto",
   "wechatgame": {
@@ -46,5 +47,27 @@
     "subContext": ""
   },
   "xxteaKey": "4f7b32ad-445e-43",
-  "zipCompressJs": true
+  "zipCompressJs": true,
+  "mainCompressionType": "default",
+  "mainIsRemote": false,
+  "nativeMd5Cache": true,
+  "android": {
+    "REMOTE_SERVER_ROOT": "",
+    "packageName": "org.cocos2d.demo"
+  },
+  "ios": {
+    "REMOTE_SERVER_ROOT": "",
+    "packageName": "org.cocos2d.demo"
+  },
+  "mac": {
+    "REMOTE_SERVER_ROOT": "",
+    "height": 720,
+    "packageName": "org.cocos2d.demo",
+    "width": 1280
+  },
+  "win32": {
+    "REMOTE_SERVER_ROOT": "",
+    "height": 720,
+    "width": 1280
+  }
 }
